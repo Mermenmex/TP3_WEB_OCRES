@@ -33,7 +33,9 @@
     <div class="input-group mb-5 offset-4 col-4">
       <input id="city-input" type="text" class="form-control" placeholder="Rentrer le nom d'une ville">
       <div class="input-group-append">
-        <button id="city-input-button" class="btn btn-success" type="submit" onclick="city();">Actualiser</button>
+        <!--<button id="city-input-button" class="btn btn-success" type="submit" onclick="city();">Actualiser</button>-->
+        <button id="city-input-button" class="btn btn-success" type="submit"
+          onclick="getThreeDayForecast();">Actualiser</button>
 
       </div>
     </div>
@@ -61,51 +63,63 @@
     </div>
 
     <div class="container">
+
       <div class="card-deck mb-3 text-center">
+
+        <!--DEMAIN-->
         <div class="card mb-4 shadow-sm offset-sm-1">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal">Demain</h4>
           </div>
           <div class="card-body">
-            <h2 id="today-forecast-main" class="card-title">
+            <h2 id="tmr-forecast-main" class="card-title">
             </h2>
             <div>
-              <p id="today-forecast-more-info"></p>
-              <div id="icon-weather-container"></div>
-              <h3 id="today-forecast-temp"> </h3>
+              <p id="tmr-forecast-more-info"></p>
+              <div id="tmr-icon-weather-container"></div>
+              <h3 id="tmr-forecast-temp"> </h3>
             </div>
           </div>
         </div>
+
+
+        <!--APRES DEMAIN-->
         <div class="card mb-4 shadow-sm offset-sm-1">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal">Après demain</h4>
           </div>
           <div class="card-body">
-            <h2 id="today-forecast-main" class="card-title">
+            <h2 id="afttmr-forecast-main" class="card-title">
             </h2>
             <div>
-              <p id="today-forecast-more-info"></p>
-              <div id="icon-weather-container"></div>
-              <h3 id="today-forecast-temp"> </h3>
+              <p id="afttmr-forecast-more-info"></p>
+              <div id="aftmr -icon-weather-container"></div>
+              <h3 id="afttmr-forecast-temp"> </h3>
             </div>
           </div>
         </div>
+
+
+        <!--APRES APRES DEMAIN-->
         <div class="card mb-4 shadow-sm offset-sm-1">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal">Encore après demain</h4>
           </div>
           <div class="card-body">
-            <h2 id="today-forecast-main" class="card-title">
+            <h2 id="aftafttmr-forecast-main" class="card-title">
             </h2>
             <div>
-              <p id="today-forecast-more-info"></p>
-              <div id="icon-weather-container"></div>
-              <h3 id="today-forecast-temp"> </h3>
+              <p id="aftafttmr-forecast-more-info"></p>
+              <div id="aftafttmr-icon-weather-container"></div>
+              <h3 id="aftafttmr-forecast-temp"> </h3>
             </div>
           </div>
         </div>
+
       </div>
+
     </div>
+
     <script src="js/API_Weather.js"></script>
     <script src="js/script.js"></script>
 </body>
