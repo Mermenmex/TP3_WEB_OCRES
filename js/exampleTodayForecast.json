@@ -1,7 +1,15 @@
 {
-  "coord": { "lon": 2.35, "lat": 48.86 },
+  "coord": {
+    "lon": 2.35,
+    "lat": 48.86
+  },
   "weather": [
-    { "id": 501, "main": "Rain", "description": "moderate rain", "icon": "10n" }
+    {
+      "id": 501,
+      "main": "Rain",
+      "description": "moderate rain",
+      "icon": "10n"
+    }
   ],
   "base": "stations",
   "main": {
@@ -12,8 +20,13 @@
     "temp_max": 17.22
   },
   "visibility": 10000,
-  "wind": { "speed": 5.1, "deg": 210 },
-  "clouds": { "all": 100 },
+  "wind": {
+    "speed": 5.1,
+    "deg": 210
+  },
+  "clouds": {
+    "all": 100
+  },
   "dt": 1571085173,
   "sys": {
     "type": 1,
